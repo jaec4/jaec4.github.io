@@ -3,23 +3,65 @@
     <head> 
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+        
 
-        <title>Example Student's HCDE 439 Physical Computing Page!</title> 
+        <title>Cookie Cutter</title> 
 
         <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
-
+        <script type="text/javascript" src="jquery-1.11.3.js"></script>
     </head> 
-    <body> 
-
-        <div class="header">
-            <h1>Example Student's Assignment 1!</h1>
-            <p>
-            <img src="red-panda.jpg" width=400></a>
-            </p>
-            <p>
-            Here is all the documentation for assignment 1!
-            </p>
+    <body>
+        <div class="work">
+        <div class="work-header">
+            <div id="space-5"></div>
+            <h1>cookie cutter</h1>
+            <div id="space-5"></div>
+            <div id="space-5"></div>
+            <img src="asset/bori/bori-main.png">
+            <p> 3 x 1.75 inch 3D printed pomeranian cookie cutter</p>
         </div>
         
+        <img id="down" src="asset/down.gif">
+
+        </div>  
+        
+        <div class="process" name="process">
+        
+        <h2>Source</h2>
+            <p>This <a href="https://drive.google.com/open?id=1a44pTj8N6r3ekTO-yyEf8-n0D1iDexk2" target="_blank">link</a>
+            contains three different cookie cutters including the pomeranian cookie cutter that I am presenting here.</p>
+            <div id="space-5"></div>
+            <div id="space-5"></div>
+            
+        <h2>Process</h2>
+            <p><strong>Tools</strong>: Photoshop, Illustrator, Rhino, Slic3r, Ender 3 Pro</p>
+            <div style="text-align: center;"> 
+            <img src="asset/bori/original.jpeg" style="margin-top: 2.5%">
+            <img src="asset/bori/original%20desaturated.jpeg">
+            <img src="asset/bori/cut.png">
+          
+            <img src="asset/bori/bori%20black.png">
+            <img src="asset/bori/bori%20outline.png">
+            <img src="asset/bori/bori%20outline2.png">
+            <img src="asset/bori/rhino.png">
+            <img src="asset/bori/slic3r.png">
+            <img src="asset/bori/bori-main.png">
+                <div id="space-5"></div>
+            <p>tell me you like it.</p>
+            </div>
+            <div id="space-5"></div>   
+            <div id="space-5"></div>
+        </div>
+
     </body>
+    
+    <script type="text/javascript">
+        $('#down').click(function() {
+        $('html,body').animate({
+                scrollTop: $('.process').offset().top
+            },
+            1);
+    });
+
+    </script>
 </html>
