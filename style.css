@@ -144,3 +144,7 @@ a {
 /*    padding-top: 100%;*/
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
