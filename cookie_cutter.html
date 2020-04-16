@@ -1,18 +1,20 @@
-<!DOCTYPE html> 
-<html> 
-    <head> 
-        <meta charset="utf-8"> 
-        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
-        
+<!DOCTYPE html>
+<html>
 
-        <title>Cookie Cutter</title> 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
 
-        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
-        <script src="jquery-3.4.1.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    </head> 
-    <body>
-        <div class="work">
+
+    <title>Cookie Cutter</title>
+
+    <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="work">
         <div class="work-header">
             <div id="space-5"></div>
             <h1>cookie cutter</h1>
@@ -21,48 +23,97 @@
             <img src="asset/bori/bori-main.png">
             <p> 3 x 1.75 inch 3D printed pomeranian cookie cutter</p>
         </div>
-        
+
         <img id="down" src="asset/down.gif">
 
-        </div>  
-        
-        <div class="process" name="process">
+    </div>
+
+    <div class="process" name="process">
         <div id="space-5"></div>
         <h2>Source</h2>
-            <p>This <a href="https://drive.google.com/open?id=1a44pTj8N6r3ekTO-yyEf8-n0D1iDexk2" target="_blank">link</a>
+        <p>This <a href="https://drive.google.com/open?id=1a44pTj8N6r3ekTO-yyEf8-n0D1iDexk2" target="_blank">link</a>
             contains STL and Rhino models of three different cookie cutters including the one that I am presenting here.</p>
-            <div id="space-5"></div>
-            <div id="space-5"></div>
-            
-        <h2>Process</h2>
-            <p><strong>Tools</strong>: Photoshop, Illustrator, Rhino, Slic3r, Ender 3 Pro</p>
-            <div style="text-align: center;"> 
-            <img src="asset/bori/original.jpeg" style="margin-top: 2.5%">
-            <img src="asset/bori/original%20desaturated.jpeg">
-            <img src="asset/bori/cut.png">
-          
-            <img src="asset/bori/bori%20black.png">
-            <img src="asset/bori/bori%20outline.png">
-            <img src="asset/bori/bori%20outline2.png">
-            <img src="asset/bori/rhino.png">
-            <img src="asset/bori/slic3r.png">
-            <img src="asset/bori/bori-main.png">
-                <div id="space-5"></div>
-            <p>arf-arf!</p>
-            </div>
-            <div id="space-5"></div>   
-            <div id="space-5"></div>
-        </div>
+        <div id="space-5"></div>
+        <div id="space-5"></div>
 
-    </body>
-    
-    <script type="text/javascript">
-        $('#down').click(function() {
+        <h2>Process</h2>
+        <p><strong>Tools</strong>: Photoshop, Illustrator, Rhino, Slic3r, Ender 3 Pro</p>
+        <div id="space-5">
+
+        </div>
+        <div class="step">
+            <h3>1. Get an image</h3>
+            <img src="asset/bori/original.jpeg">
+            <p></p>
+        </div>
+        <div id="space-5"></div>
+
+        <div class="step">
+            <h3>2. Desturate the image</h3>
+            <img src="asset/bori/original%20desaturated.jpeg">
+            <p></p>
+        </div>
+        <div id="space-5"></div>
+
+        <div class="step">
+
+            <h3>3.Cut out the image</h3>
+            <img src="asset/bori/cut.png">
+            <p></p>
+        </div>
+        <div id="space-5"></div>
+
+
+        <div class="step">
+            <h3>4.Threshold the image</h3>
+            <img src="asset/bori/bori%20black.png">
+        </div>
+        <div id="space-5"></div>
+
+
+        <div class="step">
+            <h3>5.Trace the image in vector</h3>
+            <img src="asset/bori/bori%20outline.png">
+        </div>
+        <div id="space-5"></div>
+        
+        <div class="step">
+            <h3>6.Touch up some path</h3>
+        <img src="asset/bori/bori%20outline2.png">
+              </div>
+        <div id="space-5"></div>
+        
+        <div class="step">
+            <h3>7.3D Modeling </h3>
+            <img src="asset/bori/rhino.png">
+        </div>
+        <div id="space-5"></div>
+        
+        <div class="step">
+            <h3>9. Convert STL to G-Code </h3>
+        <img src="asset/bori/slic3r.png">
+            <div id="space-5"></div>
+        
+            <div class="step">
+            <h3>10. Print </h3>
+        <img src="asset/bori/bori-main.png">
+        <div id="space-5"></div>
+            </div>
+        <p>arf-arf!</p>
+    </div>
+    <div id="space-5"></div>
+    <div id="space-5"></div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    $('#down').click(function() {
         $('html,body').animate({
                 scrollTop: $('.process').offset().top
             },
             1);
     });
 
-    </script>
+</script>
+
 </html>

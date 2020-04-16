@@ -134,8 +134,17 @@ a {
 /*    background: grey;*/
 }
     
-.process img {width: 50%; margin-top: 10%;}
+.process img {width: 30%;}
 }
+
+
+
+.step img { float: left;}
+
+.step p {display: inline;  height: 68px; vertical-align: top; margin-left: 50px; top:0; font-weight: 100; font-size:1rem; clear: both; padding: }
+
+
+
 
 
 @media screen and (max-width: 600px) {
