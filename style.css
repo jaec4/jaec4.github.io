@@ -1,51 +1,82 @@
-
-html, body {
-  padding: 0 0 0 0;
-  margin: 0;
-  font-family: 'helvetica', 'arial', 'sans';
+html,
+body {
+    padding: 0 0 0 0;
+    margin: 0;
+    font-family: 'helvetica', 'arial', 'sans';
 }
 
-h1,h2,h3,h4 {
-  font-family: 'helvetica', 'arial', 'sans';
-  }
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'helvetica', 'arial', 'sans';
+}
 
 
 a {
-  color: #000;
+    color: #000;
 }
 
 .header {
-  background: #fff;
-  color: #000;
-  padding: 3%;
+    background: #fff;
+    color: #000;
+    padding: 3%;
     height: 30px;
     line-height: 11px;
 }
 
 .header h1 {
-  font-size: 1rem;
-  }
+    font-size: 1rem;
+}
 
 /*.header-top {display: block;}*/
-.header-top #left {display: inline-block; float: left;}
-.header-top #right {display: inline-block; float: right;}
+.header-top #left {
+    display: inline-block;
+    float: left;
+}
+
+.header-top #right {
+    display: inline-block;
+    float: right;
+}
 
 
-.profile {display: inline-block; overflow: auto; margin: 0 auto;}
+.profile {
+    display: inline-block;
+    overflow: auto;
+    margin: 0 auto;
+}
 
-.profile img {text-align: center; vertical-align: middle; margin: 10px 0 auto 60px; }
+.profile img {
+    text-align: center;
+    vertical-align: middle;
+    margin: 10px 0 auto 60px;
+}
 
-.profile p {display: inline; width: 500px; height: 68px; float: right; margin-left:  30px; padding: 13.5px; background-color: #f2f2f2; vertical-align: middle; line-height: 22px; border-radius: 20px; font-weight: 100; font-size:0.9rem;}
+.profile p {
+    display: inline;
+    width: 500px;
+    height: 68px;
+    float: right;
+    margin-left: 30px;
+    padding: 13.5px;
+    background-color: #f2f2f2;
+    vertical-align: middle;
+    line-height: 22px;
+    border-radius: 20px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
 
 .assignment {
-  font-size: 12px;
-  line-height: 24px;
-  font-family: 'helvetica', 'arial', 'sans';
-  width: 180px;
-  height: 180px;
-  position: relative;
-  top: 20px;
-  left: 50px;  
+    font-size: 12px;
+    line-height: 24px;
+    font-family: 'helvetica', 'arial', 'sans';
+    width: 180px;
+    height: 180px;
+    position: relative;
+    top: 20px;
+    left: 50px;
 }
 
 .assignment a {
@@ -55,9 +86,9 @@ a {
 }
 
 .assignment a:hover {
-  background: #F06;
-  color: #F06;
-  text-decoration: none;
+    background: #F06;
+    color: #F06;
+    text-decoration: none;
 }
 
 
@@ -72,24 +103,25 @@ a {
     padding: 0px 30px 30px 30px;
 }
 
-.widebody a {
-}
+.widebody a {}
 
 .widebody a:hover {
-  background: #F06;
-  color: #FFF;
-  text-decoration: none;
+    background: #F06;
+    color: #FFF;
+    text-decoration: none;
 }
 
-#space-5 {height: 5vh !important;
-        width: 100vw;
-        overflow-x: none;}
+#space-5 {
+    height: 5vh !important;
+    width: 100vw;
+    overflow-x: none;
+}
 
 .column {
-  float: left;
-  width: 33.3%;
-  padding: 0px;
-/*  padding-top: 33.3%;*/
+    float: left;
+    width: 33.3%;
+    padding: 0px;
+    /*  padding-top: 33.3%;*/
 }
 
 .column img {
@@ -101,19 +133,28 @@ a {
 
 
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .work {
-/*    margin: 0 10%;*/
+    /*    margin: 0 10%;*/
 }
 
-.work h1 {font-size: 2rem;}
+.work h1 {
+    font-size: 2rem;
+}
 
-.work-header {text-align: center; height: 100vh;}
-.work-header img {text-align: center; width: 40%;}
+.work-header {
+    text-align: center;
+    height: 100vh;
+}
+
+.work-header img {
+    text-align: center;
+    width: 40%;
+}
 
 
 #down {
@@ -131,29 +172,47 @@ a {
 .process {
     margin: 10%;
     height: 100vh;
-/*    background: grey;*/
-}
-    
-.process img {width: 30%;}
+    /*    background: grey;*/
 }
 
-
-
-.step img { float: left;}
-
-.step p {display: inline;  height: 68px; vertical-align: top; margin-left: 50px; top:0; font-weight: 100; font-size:1rem; clear: both; padding: }
-
-
-
-
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-/*    padding-top: 100%;*/
-  }
+.process img {
+    width: 33%;
+}
 }
 
-html {
-  scroll-behavior: smooth;
+
+
+.step img {
+    float: left;
 }
+
+/*
+
+.step-text {display: inline;  height: 68px; vertical-align: top; margin-left: 50px; top:0; font-weight: 100; font-size:1rem; clear: both; padding: }
+*/
+
+.step-text {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+li {
+    font-weight: 300;
+    margin-bottom: 15px;
+    margin-left:-10px;
+
+
+
+
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+            /*    padding-top: 100%;*/
+        }
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
