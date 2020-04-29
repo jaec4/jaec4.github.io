@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+
+    <title>Clips</title>
+
+    <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="work">
+        <div class="work-header">
+            <div id="space-5"></div>
+            <h1>Clips</h1>
+            <div id="space-5"></div>
+            <div id="space-5"></div>
+            <img src="asset/sugar/lumb-cover.png">
+            <p> Lump-sugars from calibrating printer setting</p>
+        </div>
+
+        <img id="down" src="asset/down.gif">
+
+    </div>
+
+    <div class="process" name="process">
+        <!--
+        <div id="space-5"></div>
+        <h2>Source</h2>
+        <p>This <a href="https://drive.google.com/open?id=1a44pTj8N6r3ekTO-yyEf8-n0D1iDexk2" target="_blank">link</a>
+            contains STL and Rhino models of three different cookie cutters including the one that I am presenting here.</p>
+        <div id="space-5"></div>
+-->
+        <div id="space-5"></div>
+            
+        <h2>Source</h2>
+        <p>This <a href="https://drive.google.com/file/d/17WYIFRTQVSRY22wMQfIXTAkIryfXtbSe/view?usp=sharing" target="_blank">link</a>
+            contains STL, Rhino, Grasshoper definition, G-code files of the clips and nested triangle that I am presenting here.</p>
+        <div id="space-5"></div>
+        <div id="space-5"></div>
+        
+        <h2>Documentation</h2>
+        <p><strong>Tools</strong>: Rhino, Cura, Grasshopper, & Ender 3 Pro</p>
+        <div id="space-5">
+
+        </div>
+        <div class="step">
+            <h3>Clips</h3>
+            <img style="width:65%" src="asset/sugar/printer.png">
+            <div class="step-text">
+                <h4>Major Steps</h4>
+                <ul>
+                    <li>
+                        Follow the instruction provided within the product package.</li>
+                    <li>Adjust the extruder's eccentric nuts such that it does not wiggle.
+                    </li>
+                    <li>
+                        Adjust build plate level.
+
+                    </li>
+                    <li>
+                        Check for loose and tighten screws.
+                </ul>
+            </div>
+
+        </div>
+        <div class="step">
+            <div id="space-5"></div>
+            <h3>Nested Triangles</h3>
+                            <h4>1. Create a grasshopper definition that creates nesting structures</h4>
+            <img style="width:100%" src="asset/clips/nested-grass.png">
+   
+
+            <h4>2. Bake the result</h4>
+            <img style="width:100%" src="asset/clips/nested-rhino.png">      
+         
+                        <h4>3. Print</h4>
+            <img style="width:100%" src="asset/clips/triangle.png">      
+         <div id="space-5"></div>
+        </div>
+
+        <div id="space-5"></div>
+
+    </div>
+
+
+
+</body>
+
+<script type="text/javascript">
+    $('#down').click(function() {
+        $('html,body').animate({
+                scrollTop: $('.process').offset().top
+            },
+            1);
+    });
+
+</script>
+
+</html>
